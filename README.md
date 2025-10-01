@@ -1,10 +1,10 @@
 # CHURN_PREDICTION
-Project Overview
+# Project Overview
 This project focuses on predicting customer churn for a telecommunications company using machine learning. Customer churn (when customers stop using a service) is a critical business metric, and accurately predicting it enables companies to take proactive retention measures.
 
 The project implements and compares multiple machine learning models, with XGBoost selected as the production-ready model due to its superior performance in handling complex patterns in customer data.
 
-Business Objective
+# Business Objective
 Primary Goal: Build a robust churn prediction model that can:
 
 Identify customers at high risk of churning
@@ -15,16 +15,16 @@ Reduce customer acquisition costs by improving retention
 
 Provide insights into factors driving churn
 
-Dataset Description
+# Dataset Description
 The dataset contains 7,043 customer records with 56 features including:
 
-Target Variable
+## Target Variable
 Churn: Binary indicator (1 = Churned, 0 = Not Churned)
 
 Churn Rate: 26.54% (1,869 churned customers)
 
-Key Features
-Demographic Information
+## Key Features
+### Demographic Information
 Age, Gender, Senior Citizen, Married, Dependents
 
 Geographic data: Country, State, City, Zip Code, Latitude, Longitude
@@ -55,7 +55,7 @@ Complaint Frequency, Engagement Index, CLTV (Customer Lifetime Value)
 Derived Features
 Tenure Category, Age Group, Senior Flag
 
-Technical Implementation
+# Technical Implementation
 Data Preprocessing
 Feature Engineering
 Leakage Prevention: Removed direct churn indicators:
@@ -71,32 +71,13 @@ Test set: 1,409 customers
 
 Stratified sampling ensures consistent churn distribution (26.5% in both sets)
 
-Preprocessing Pipelines
+# Preprocessing Pipelines
 Numerical Features (22 features)
-python
-numeric_cols = [
-    'Age', 'Number of Dependents', 'Latitude', 'Longitude', 'Population',
-    'Monthly Charge', 'Total Charges', 'Total Revenue', 'Total Refunds',
-    'Total Extra Data Charges', 'Total Long Distance Charges',
-    'Avg Monthly GB Download', 'Number of Referrals', 'Satisfaction Score',
-    'CLTV', 'ARPU', 'Payment Consistency', 'Service Bundling Score',
-    'Complaint Frequency', 'Engagement Index', 'Senior Flag', 'Tenure in Months'
-]
-Transformation: StandardScaler (mean=0, std=1)
 
 Categorical Features (27 features)
-python
-categorical_cols = [
-    'Gender', 'Senior Citizen', 'Married', 'Dependents', 'Country', 'State',
-    'City', 'Zip Code', 'Payment Method', 'Paperless Billing', 'Phone Service',
-    'Multiple Lines', 'Internet Service', 'Internet Type', 'Online Security',
-    'Online Backup', 'Device Protection Plan', 'Premium Tech Support',
-    'Streaming TV', 'Streaming Movies', 'Streaming Music', 'Unlimited Data',
-    'Contract', 'Offer', 'Referred a Friend', 'Tenure Category', 'Age Group'
-]
-Transformation: OneHotEncoder (handle_unknown='ignore')
 
-Model Architecture
+
+# Model Architecture
 1. Baseline Models
 Logistic Regression: Linear baseline for benchmarking
 
