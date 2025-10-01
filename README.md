@@ -7,13 +7,13 @@ The project implements and compares multiple machine learning models, with XGBoo
 # Business Objective
 Primary Goal: Build a robust churn prediction model that can:
 
-Identify customers at high risk of churning
+1. Identify customers at high risk of churning
 
-Enable targeted retention campaigns
+2. Enable targeted retention campaigns
 
-Reduce customer acquisition costs by improving retention
+3. Reduce customer acquisition costs by improving retention
 
-Provide insights into factors driving churn
+4. Provide insights into factors driving churn
 
 # Dataset Description
 The dataset contains 7,043 customer records with 56 features including:
