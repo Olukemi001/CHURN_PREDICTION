@@ -29,14 +29,14 @@ Age, Gender, Senior Citizen, Married, Dependents
 
 Geographic data: Country, State, City, Zip Code, Latitude, Longitude
 
-Service & Usage Metrics
+### Service & Usage Metrics
 Monthly Charge, Total Charges, Total Revenue, Total Refunds
 
 Total Extra Data Charges, Total Long Distance Charges
 
 Avg Monthly GB Download, ARPU (Average Revenue Per User)
 
-Service Subscriptions
+### Service Subscriptions
 Phone Service, Multiple Lines, Internet Service, Internet Type
 
 Online Security, Online Backup, Device Protection Plan
@@ -45,24 +45,24 @@ Premium Tech Support, Streaming Services (TV, Movies, Music)
 
 Unlimited Data, Contract Type, Payment Method
 
-Customer Behavior & Engagement
+### Customer Behavior & Engagement
 Tenure in Months, Number of Referrals, Satisfaction Score
 
 Payment Consistency, Service Bundling Score
 
 Complaint Frequency, Engagement Index, CLTV (Customer Lifetime Value)
 
-Derived Features
+### Derived Features
 Tenure Category, Age Group, Senior Flag
 
 # Technical Implementation
-Data Preprocessing
-Feature Engineering
+## Data Preprocessing
+### Feature Engineering
 Leakage Prevention: Removed direct churn indicators:
 
 Customer Status, Churn Label, Churn Reason, Churn Category, Churn Score
 
-Data Splitting
+### Data Splitting
 Train-Test Split: 80-20 split with stratification
 
 Training set: 5,634 customers
@@ -92,7 +92,7 @@ Robust to overfitting
 
 Provides feature importance insights
 
-Model Training Strategy
+## Model Training Strategy
 ColumnTransformer for parallel preprocessing
 
 Pipeline integration for reproducible workflows
@@ -101,7 +101,7 @@ Stratified K-Fold cross-validation
 
 RandomizedSearchCV for hyperparameter tuning
 
-Model Evaluation Metrics
+## Model Evaluation Metrics
 The project evaluates models using comprehensive metrics:
 
 Accuracy: Overall prediction correctness
@@ -116,8 +116,8 @@ ROC-AUC: Model discrimination capability
 
 Confusion Matrix: Detailed error analysis
 
-Key Features
-Technical Strengths
+## Key Features
+### Technical Strengths
 Comprehensive Feature Engineering: 49 engineered features capturing diverse customer aspects
 
 Robust Preprocessing: Automated pipelines for scalable deployment
@@ -128,7 +128,7 @@ Production Ready: XGBoost optimized for real-world performance
 
 Interpretability: Feature importance analysis for business insights
 
-Business Value
+## Business Value
 Proactive Retention: Identify at-risk customers before churn
 
 Cost Reduction: Lower customer acquisition costs through better retention
@@ -138,25 +138,27 @@ Targeted Marketing: Focus resources on high-value retention opportunities
 Customer Insights: Understand drivers of churn for service improvements
 
 
-Installation & Usage
+## Installation & Usage
 Prerequisites
 bash
 Python 3.8+
 pip install -r requirements.txt
-Required Libraries
+
+# Required Libraries
 python
-# Core Data Handling
+## Core Data Handling
 pandas, numpy
 
-# Visualization
+## Visualization
 matplotlib, seaborn
 
-# Machine Learning
+## Machine Learning
 scikit-learn, xgboost
 
-# Model Persistence
+## Model Persistence
 joblib
-Running the Project
+
+## Running the Project
 Clone the repository
 
 Install dependencies: pip install -r requirements.txt
@@ -165,7 +167,7 @@ Run the Jupyter notebook: jupyter notebook CHURN_MODEL_TELCO.ipynb
 
 Execute cells sequentially for full pipeline
 
-Expected Outcomes
+## Expected Outcomes
 High-performance churn prediction with actionable probabilities
 
 Feature importance rankings to guide business strategy
@@ -174,7 +176,7 @@ Model interpretability for stakeholder trust
 
 Scalable pipeline for ongoing model retraining
 
-Future Enhancements
+## Future Enhancements
 Real-time Prediction API for integration with CRM systems
 
 Automated Retraining pipeline with new customer data
