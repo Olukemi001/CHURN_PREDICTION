@@ -79,18 +79,18 @@ Categorical Features (27 features)
 
 # Model Architecture
 1. Baseline Models
-Logistic Regression: Linear baseline for benchmarking
+  a. Logistic Regression: Linear baseline for benchmarking
 
-Random Forest: Ensemble method for comparison
+  b. Random Forest: Ensemble method for comparison
 
 2. Production Model - XGBoost
-Gradient Boosting algorithm known for high performance
+  a. Gradient Boosting algorithm known for high performance
 
-Handles complex feature interactions
+  b. Handles complex feature interactions
 
-Robust to overfitting
+  c. Robust to overfitting
 
-Provides feature importance insights
+  d. Provides feature importance insights
 
 ## Model Training Strategy
 ColumnTransformer for parallel preprocessing
