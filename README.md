@@ -79,11 +79,13 @@ Categorical Features (27 features)
 
 # Model Architecture
 1. Baseline Models
+   
   a. Logistic Regression: Linear baseline for benchmarking
 
   b. Random Forest: Ensemble method for comparison
 
 2. Production Model - XGBoost
+   
   a. Gradient Boosting algorithm known for high performance
 
   b. Handles complex feature interactions
@@ -176,13 +178,4 @@ Model interpretability for stakeholder trust
 
 Scalable pipeline for ongoing model retraining
 
-## Future Enhancements
-Real-time Prediction API for integration with CRM systems
 
-Automated Retraining pipeline with new customer data
-
-A/B Testing Framework for retention strategy evaluation
-
-Customer Segmentation for personalized retention approaches
-
-Lifetime Value Integration for ROI-optimized interventions
